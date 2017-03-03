@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+	</default>
+    <designer_adminhtml_designer_index>
+		<reference name="head">	
+    		<action method="addJs"><script>magentothem/ma.jq.slide.js</script></action>
+    	</reference>
+        <reference name="content">
+            <block type="designer/adminhtml_designer" name="designer" />
+        </reference>
+    </designer_adminhtml_designer_index>
+</layout>

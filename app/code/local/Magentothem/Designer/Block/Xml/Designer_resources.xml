@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ma_designer>
+    <resources>
+        <resource>
+            <title>Designer List</title>
+            <identifier>designer_list</identifier>
+            <root_template>one_column</root_template>
+				<content><![CDATA[
+					{{block type="designer/designer" name="ma.designer" template="magentothem/designer/designerlist.phtml"}}
+				]]></content>
+				<sort_order>1</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+</ma_designer>

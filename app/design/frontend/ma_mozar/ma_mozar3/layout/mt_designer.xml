@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <!-- <action method="addJs" ifconfig="custommenu/general/enabled">
+                <script>magentothem/ma.jq.slide.js</script>
+            </action> -->
+            <action method="addCss" ifconfig="designer/designer_config/enabled">
+                <stylesheet>magentothem/css/ma.designer.css</stylesheet>
+            </action>
+            <!--<action method="addJs" ifconfig="designer/designer_config/enabled">
+                <script>magentothem/custommenu/123123.js</script>
+            </action>-->
+        </reference>
+        <reference name="catalog.listdes">
+            <action method="setTemplate" ifconfig="designer/designer_config/enabled">
+                <template>magentothem/designer/designerlist.phtml</template>
+            </action>
+        </reference>
+    </default>
+</layout> 

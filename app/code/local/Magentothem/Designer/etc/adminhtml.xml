@@ -1,0 +1,82 @@
+<?xml version="1.0"?> 
+<config>
+
+
+	    <menu>
+            <magentothem module="designer">
+                <title>Magentothem</title>
+                <sort_order>89</sort_order>           
+                <children>
+                    <designer translate="title" module="designer">
+                        <title>Designer</title>
+                        <sort_order>2</sort_order>
+                        <children>
+							<items translate="title" module="designer">
+								<title>Manage Designer</title>
+								<sort_order>0</sort_order>
+								<action>designer/adminhtml_designer</action>
+							</items>
+                            <configuration>
+                                <title>Configuration</title>
+                                <sort_order>1</sort_order>
+                                <action>adminhtml/system_config/edit/section/designer</action>
+                            </configuration>
+							<installs translate="title" module="designer">
+								<title>Designer Install</title>
+								<sort_order>2</sort_order>
+								<action>designer/adminhtml_install</action>
+							</installs>
+                        </children>
+                    </designer>
+               </children>
+            </magentothem>
+        </menu>
+		
+		
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<designer>
+										<title>designer</title>
+									</designer>
+								</children>
+							</config>
+						</children>
+					</system>	
+					<magentothem translate="title" module="designer">
+						<title>Magentothem</title>
+						<sort_order>89</sort_order>               
+						<children>
+							<designer translate="title" module="designer">
+								<title>designer</title>
+								<sort_order>0</sort_order>
+								<children>
+									<items translate="title" module="designer">
+										<title>Manage Designer</title>
+										<sort_order>0</sort_order>
+										<action>designer/adminhtml_designer</action>
+									</items>
+									<configuration>
+										<title>Configuration</title>
+										<sort_order>1</sort_order>
+										<action>adminhtml/system_config/edit/section/designer</action>
+									</configuration>
+									<installs>
+										<title>Install Designer</title>
+										<sort_order>2</sort_order>
+										<action>designer/system_config/edit/section/installs</action>
+									</installs>
+								</children>
+							</designer>
+						</children>
+					</magentothem>					
+				</children>
+			</admin>
+        </resources>
+	</acl>
+</config>
